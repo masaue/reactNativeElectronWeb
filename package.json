@@ -9,7 +9,8 @@
     "test": "jest",
     "lint": "eslint .",
     "web": "webpack-dev-server --config ./web/webpack.config.js",
-    "web:release": "webpack --config ./web/webpack.config.js --mode production"
+    "web:release": "webpack --config ./web/webpack.config.js --mode production",
+    "electron": "electron electron/main.js"
   },
   "dependencies": {
     "react": "16.9.0",
@@ -24,6 +25,7 @@
     "babel-jest": "^24.9.0",
     "babel-loader": "^8.0.6",
     "babel-plugin-react-native-web": "^0.12.1",
+    "electron": "^8.0.1",
     "eslint": "^5.16.0",
     "jest": "^24.9.0",
     "metro-react-native-babel-preset": "^0.56.0",
