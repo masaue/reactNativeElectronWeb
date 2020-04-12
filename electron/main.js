@@ -1,6 +1,6 @@
-const { app, BrowserWindow } = require('electron')
+const {app, BrowserWindow} = require('electron');
 
-let win
+let win;
 
 const createWindow = () => {
   win = new BrowserWindow({
@@ -13,25 +13,25 @@ const createWindow = () => {
     webPreferences: {
       nodeIntegration: true,
     },
-  })
-  win.loadURL(`file://${__dirname}/../web/public/index.html`)
+  });
+  win.loadURL(`file://${__dirname}/../web/public/index.html`);
 
   win.on('closed', () => {
-    win = null
-  })
+    win = null;
+  });
   win.once('ready-to-show', () => {
-    win.show()
-  })
-}
+    win.show();
+  });
+};
 
-app.on('ready', createWindow)
+app.on('ready', createWindow);
 
 app.on('window-all-closed', () => {
-  app.quit()
-})
+  app.quit();
+});
 
 app.on('activate', () => {
   if (win === null) {
-    createWindow()
+    createWindow();
   }
-})
+});

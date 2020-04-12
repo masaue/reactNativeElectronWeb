@@ -21,8 +21,7 @@ const App: () => React$Node = () => {
     <>
       <StatusBar barStyle="dark-content" />
       <SafeAreaView>
-        <ScrollView
-          contentInsetAdjustmentBehavior="automatic">
+        <ScrollView contentInsetAdjustmentBehavior="automatic">
           {global.HermesInternal == null ? null : (
             <View style={styles.engine}>
               <Text style={styles.footer}>Engine: Hermes</Text>
@@ -37,13 +36,11 @@ const App: () => React$Node = () => {
           </View>
           <View style={styles.sectionContainer}>
             <Text style={styles.sectionTitle}>See Your Changes</Text>
-            <Text style={styles.sectionDescription}>
-            </Text>
+            <Text style={styles.sectionDescription} />
           </View>
           <View style={styles.sectionContainer}>
             <Text style={styles.sectionTitle}>Debug</Text>
-            <Text style={styles.sectionDescription}>
-            </Text>
+            <Text style={styles.sectionDescription} />
           </View>
           <View style={styles.sectionContainer}>
             <Text style={styles.sectionTitle}>Learn More</Text>
