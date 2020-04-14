@@ -1,0 +1,15 @@
+{
+  "sortToTop": [
+    "name",
+    "version",
+    "private",
+    "description",
+    "main",
+    "scripts",
+    "repository",
+    "author",
+    "license",
+    "bugs",
+    "homepage"
+  ]
+}
